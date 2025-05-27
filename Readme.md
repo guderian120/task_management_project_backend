@@ -41,11 +41,11 @@ The backend exposes these REST endpoints, all supporting CORS:
 
 | Endpoint                        | Method | Lambda Function         | Description                                          |
 |---------------------------------|--------|-------------------------|------------------------------------------------------|
-| `/goals`                        | POST   | `create_goal.py`        | Create or update a goal (team members).              |
-| `/goals`                        | GET    | (Not provided)          | Retrieve all goals (assumed).                        |
-| `/goals/{goalId}`               | DELETE | (Not provided)          | Delete a goal (assumed).                             |
-| `/tasks`                        | GET    | `get_task.py`           | Get all tasks (admins) or assigned tasks (users).    |
-| `/tasks`                        | POST   | (Not provided)          | Create a new task (assumed).                         |
+| `/goals`                        | POST   | `create_goal.py`        | Create or update a goal.              |
+| `/goals`                        | GET    | `get_goals.py`          | Retrieve all goals .                        |
+| `/goals/{goalId}`               | DELETE | `delete_goal.py`        | Delete a goal .                             |
+| `/tasks`                        | GET    | `get_task.py`           | Get all tasks (admins) or assigned tasks .    |
+| `/tasks`                        | POST   | `create-task-function.py`          | Create a new task .                         |
 | `/tasks/{taskId}/goals-progress`| GET    | `get_goal_progress.py`  | Get goals for a task (admins only).                  |
 | `/tasks/{taskId}/status`        | PUT    | `update_task.py`        | Update task status and notify assignees.             |
 
