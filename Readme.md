@@ -10,7 +10,7 @@ This documentation outlines the backend components, including Lambda functions, 
 | Stack            | Description                                                                 | GitHub Link(s)                                                                        |
 |------------------|-----------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
 | **API DOCUMENTATION URL**      | Real time api documentation with swagger | [Swagger-ui](https://app.swaggerhub.com/apis-docs/amalitech-8db/Task_Manager/1.0)|
-| **Frontend**     | Built with Vue.js, using AWS Amplify for authentication integration.        | [Task Manager Backend](https://github.com/guderian120/task_manager_project_frontend)                                                                           |
+| **Frontend**     | Built with Vue.js, using AWS Amplify for authentication integration.        | [Task Manager Frontend](https://github.com/guderian120/task_manager_project_frontend)                                                                           |
 | **Live Application** | Explore the live application here                                        | [Task Manager](https://dangf6yk5kpeq.cloudfront.net/)    
 
 
