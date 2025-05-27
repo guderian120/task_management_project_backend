@@ -10,7 +10,7 @@ This documentation outlines the backend components, including Lambda functions, 
 | Stack            | Description                                                                 | GitHub Link(s)                                                                        |
 |------------------|-----------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
 | **API DOCUMENTATION URL**      | Real time api documentation with swagger | [Swagger-ui](https://app.swaggerhub.com/apis-docs/amalitech-8db/Task_Manager/1.0)|
-| **Frontend**     | Built with Vue.js, using AWS Amplify for authentication integration.        | [Task Manager Backend](https://github.com/guderian120/task_management_project_frontend)                                                                           |
+| **Frontend**     | Built with Vue.js, using AWS Amplify for authentication integration.        | [Task Manager Backend](https://github.com/guderian120/task_manager_project_frontend)                                                                           |
 | **Live Application** | Explore the live application here                                        | [Task Manager](https://dangf6yk5kpeq.cloudfront.net/)    
 
 
@@ -35,7 +35,7 @@ The backend uses the following AWS services:
 - Lambda functions are deployed via AWS SAM or manually.
 - API Gateway uses Lambda proxy integration with Cognito authorizers.
 - Environment variables (`TASKS_TABLE`, `GOALS_TABLE`, `GMAIL_USER`, `GMAIL_PASSWORD`, `ADMIN_EMAIL`) are configured in Lambda.
-
+![API Gateway](media/api_gateway.png)
 ## API Gateway Endpoints
 The backend exposes these REST endpoints, all supporting CORS:
 
