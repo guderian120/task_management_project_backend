@@ -3,7 +3,7 @@
 ## Overview
 The backend of the Task Management System is a serverless AWS architecture that supports task allocation, goal setting, and progress tracking for teams. It integrates with a Vue.js frontend hosted on S3 with CloudFront, using Amplify for authentication, Lambda for logic, DynamoDB for storage, API Gateway for REST endpoints, and Cognito for user authentication. The backend provides APIs for task and goal management, enforces role-based access (admins vs. team members), and sends email notifications for task updates and deadlines.
 
-This documentation outlines the backend components, including Lambda functions, API Gateway endpoints, DynamoDB tables, and security considerations, with placeholders for three assumed functions.NOTE: These functions were built for cloud native architecture, modifying it to run on local environment is not in the scope of this documentation.
+This documentation outlines the backend components, including Lambda functions, API Gateway endpoints, DynamoDB tables, and security considerations.NOTE: These functions were built for cloud native architecture, modifying it to run on local environment is not in the scope of this documentation.
 
 ## 📚 Resources Table
 
