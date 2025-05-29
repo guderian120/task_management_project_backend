@@ -53,7 +53,7 @@ The backend exposes these REST endpoints, all supporting CORS:
 - **Authorization**: Cognito JWT tokens required, with role-based access enforced in Lambda logic.
 
 ## DynamoDB Tables
-Two DynamoDB tables are used, inferred from function logic:
+Two DynamoDB tables are used: inferred from function logic:
 
 ### Tasks Table (`TASKS_TABLE`)
 Stores tasks created by admins.
@@ -83,7 +83,7 @@ Stores goals set by team members.
 | `progress`      | Number | Progress percentage (0-100).                  |
 | `createdAt`     | String | Creation timestamp (ISO format).              |
 
-**Note**: Schemas are inferred. Provide actual schemas for accuracy.
+
 
 ## Lambda Functions
 Brief descriptions of lambda functions:
@@ -127,17 +127,7 @@ Brief descriptions of lambda functions:
 
 ![Lambda functions](media/lambda_functions.png)
 
-## Security Considerations
-- **Cognito Authentication**:
-  - All endpoints require Cognito JWT tokens, validated by API Gateway authorizers.
-  - Roles (Admin, Team Member) use `cognito:groups`.
-- **IAM Permissions**:
-  - Lambda roles need `dynamodb:Scan`, `dynamodb:GetItem`, `dynamodb:PutItem`, `dynamodb:UpdateItem` for tables.
-  - Usage of least privilege principles.
-- **Environment Variables**:
-  - Store sensitive data (`GMAIL_USER`, `GMAIL_PASSWORD`, `ADMIN_EMAIL`) in Lambda environment variables, ideally with AWS KMS.
-- **DynamoDB**:
-  - Use partition keys (`taskId`, `goalId`) for efficiency.
+
 
 ## Integration with Frontend
 - **Vue.js Frontend**:
